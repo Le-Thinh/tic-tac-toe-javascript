@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
+    <link rel="stylesheet" href="./style.css">
+    <title>TIC TAC TOE GAME</title>
+  </head>
+
+  <body>
+
+    <main>
+        <header id="header">
+            <div class="player player-active js-xPlayer" 
+            id="xPlayerDisplay" onclick="choosePlayer('X')">
+                X
+            </div>
+            <h3 class="titleHeader js-titleHeader">Choose</h3>
+            <div class="player js-oPlayer" id="oPlayerDisplay" onclick="choosePlayer('O')">
+                O
+            </div>
+        </header>
+
+        <div id="board">
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <div class="cell js-cell"></div>
+            <button class="js-restartBtn" id="restartBtn">Restart</button>
+        </div>
+
+    </main>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
